@@ -18,7 +18,13 @@ public class Expense {
 		this.date = date;
 		this.purpose = purpose;
 		
-		lineItem.addExpense(this);
+		try {
+			lineItem.addExpense(this);
+		}
+		catch(NullPointerException e) {
+			System.err.println("Expense must have a corresponding LineItem");
+		}
+			
 	}
 	
 	//Constructor used when date is not given defaults to current date
