@@ -38,6 +38,10 @@ public class LineItem {
 		return arrayBuilder.build();
 	}
 	
+	public String getName() {
+		return this.name;
+	}
+	
 	public String toString() {
 		return this.toJson().toString();
 	}

@@ -52,13 +52,18 @@ public class Expense {
 		return jsonObj;
 	}
 	
-	public String toString() {
-		return this.toJson().toString();
-	}
-	
 	public double getAmt() {
 		return this.amt;
 	}
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public String toString() {
+		return this.toJson().toString();
+	}
+
 	
 	
 
